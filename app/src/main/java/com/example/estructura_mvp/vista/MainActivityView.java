@@ -8,16 +8,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.estructura_mvp.MainInterface;
 import com.example.estructura_mvp.R;
-import com.example.estructura_mvp.presentador.MainActivityPresenter;
+import com.example.estructura_mvp.interfaces.InterPresenter;
+import com.example.estructura_mvp.interfaces.InterfaceView;
+import com.example.estructura_mvp.presentador.MainActivityPresenterImpl;
 
-public class MainActivityView extends AppCompatActivity implements MainInterface.View {
+public class MainActivityView extends AppCompatActivity implements InterfaceView {
 
     Button btn;
   TextView txt;
 EditText edt;
-    private MainInterface.Presenter presenter;
+    private InterPresenter presenter;
 
 
     @Override
@@ -27,7 +28,7 @@ EditText edt;
         btn = (Button) findViewById(R.id.btn);
         txt = (TextView) findViewById(R.id.txt);
         edt = (EditText) findViewById(R.id.edt);
-        presenter = new MainActivityPresenter(this);
+        presenter = new MainActivityPresenterImpl(this);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
