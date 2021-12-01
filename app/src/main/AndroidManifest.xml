@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Estructura_mvp">
-        <activity android:name=".vista.MainActivityView"
+        <activity android:name=".vista.Login"
             android:exported="true">
 
             <intent-filter>

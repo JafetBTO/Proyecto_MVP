@@ -5,31 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".vista.MainActivityView">
+    tools:context=".vista.Login">
 
     <EditText
         android:id="@+id/edt"
-        android:hint="Dato"
+        android:hint="Usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         ></EditText>
 
-    <TextView
-        android:id="@+id/txt"
+    <EditText
+        android:id="@+id/edt2"
+        android:hint="Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        ></EditText>
 
     <Button
         android:id="@+id/btn"
-        android:text="Enviar"
+        android:text="Entrar"
         android:layout_width="match_parent"
-        android:onClick="senData"
+        android:onClick="sesion"
         android:layout_height="wrap_content"
         tools:ignore="OnClick">
     </Button>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ProgressBar>
 </LinearLayout>
