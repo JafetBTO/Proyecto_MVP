@@ -17,7 +17,7 @@ public class MainActivityPresenterImpl implements InterPresenter, OnLogin {
         interactor = new MainActivityInteractorImpl(this);
     }
 
-
+/**/
     @Override
     public void login(String user, String pass) {
         if(view != null){
