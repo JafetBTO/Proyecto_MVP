@@ -28,5 +28,6 @@ public class MainActivityInteractorImpl implements InterInteractor {
      }
  },3000);
 
+
     }
 }
